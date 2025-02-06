@@ -1,0 +1,473 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate Mate Chatbot</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        
+        /* General body styling */
+        body, html {
+            font-family: 'Arial', sans-serif;
+            background-color: #2e2e2e;
+            color: white;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        /* Main container for full-screen layout */
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            background-color:#3e3e3e;
+            background-image: url('https://images.unsplash.com/photo-1488866022504-f2584929ca5f?ixlib=rb-4.0.3'); /* Path to your image */
+            background-size: cover; /* Scales the image to cover the entire background */
+            background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
+            background-attachment: fixed; /* Keeps the image fixed during scrolling */
+            background-position: center; /* Centers the image */
+            flex-grow: 1;
+        }
+        
+        .header {
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color:rgba(0, 0, 0, 0.5);;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Logo and text container */
+        .logo-text {
+            display: flex;
+            align-items: center;
+            
+        }
+        
+        /* Logo styling */
+        .header img {
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        
+        /* Title styling */
+        .header h3 {
+            margin: 0;
+            color: white;
+            font-size: 1.5rem;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        /* Navigation link container */
+        .hi {
+            display: flex;
+            font-family: "Times New Roman", Times, serif;
+            
+        }
+        
+        /* Navigation link styling */
+        .hi a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            align-items: center;
+            padding: 5px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .hi a:hover {
+            background-color: #7b61ff;
+            color: white;
+        }
+        .heading{
+            font-family: "Times New Roman", Times, serif;
+            justify-content:center;
+            
+        }
+        
+        /* Chatbox styling for full screen */
+        .chatbox {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+            padding: 10px;
+            overflow: hidden;
+        }
+        
+        .message img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        /* Messages area styling */
+        .messages {
+            width: 100%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.5);;
+            color: #d3d3d3;
+            border-radius: 10px;
+            max-height: 100%;
+        }
+        
+        .messages::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+        .messages::-webkit-scrollbar-thumb {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        
+        /* Message bubbles */
+        .message {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 75%;
+            word-wrap: break-word;
+            min-height: 40px;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        /* User message styling */
+        .user-message {
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family:'Lucida Grande',monospace;
+            margin-left: auto;
+            text-align: right;
+        }
+        
+        /* Bot message styling */
+        .bot-message {
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family:'Lucida Grande',monospace;
+            margin-right: auto;
+            text-align: left;
+        }
+        
+        /* Input area fixed at the bottom */
+        .input-box {
+            width: 800px;/* Center the input box */
+            padding: 15px;
+            display:flex;
+            flex-direction:row;
+            border-radius: 6px;
+            background-color: #3e3e3e;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); 
+            margin: 0 auto; 
+        }
+        
+        .input-box textarea {
+            padding:10px;
+            border-radius: 5px;
+            border: none;
+            width: 100%; /* Controls the width of the textarea */
+            background-color: #4e4e4e;
+            color: white;
+            resize: none;
+            font-size: 1rem;
+            display: block; /* Makes the textarea behave like a block element */
+                /* Centers the textarea horizontally */
+        }
+        
+        .input-box textarea::placeholder {
+            color: #bbb;
+        }
+        
+        .input-box button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            
+            background-color: #7b61ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .input-box button:hover {
+            background-color: #5a45cc;
+        }
+        
+        /* Footer / Bottom tray */
+        footer {
+            background-color: #3e3e3e;
+            color: #bbb;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+        
+        /* Styling for the typing indicator */
+        .typing {
+            color: #bbb;
+            font-style: italic;
+            animation: typingAnimation 1.5s infinite steps(5);
+        }
+        
+        @keyframes typingAnimation {
+            0% { content: "Typing.";}
+            33% { content: "Typing.."; }
+            66% { content: "Typing..."; }
+        }
+        
+        /* For Mobile view (max-width: 767px) */
+        @media (max-width: 767px) {
+            .input-box {
+                    /* Full width for mobile */
+                padding: 8px;
+            }
+        }
+        /* Responsive styling for different screen sizes */
+        @media (min-width: 768px) {
+            .chatbox {
+                width: 800px;
+                margin: 0 auto;
+            }
+        
+            .header h1 {
+                font-size: 1.8rem;
+            }
+        
+            .input-box {
+                padding: 15px;
+            }
+        
+            .input-box textarea {
+                font-size: 1rem;
+            }
+        
+            .input-box button {
+                padding: 12px 18px;
+            }
+        }
+        
+        /* Mobile styling */
+        @media (max-width: 767px) {
+            .chatbox {
+                width: 100%;
+                padding: 5px;
+            }
+        
+            .input-box {
+                padding: 8px;
+                width: 100%;
+            }
+        
+            .input-box textarea {
+                width: 100%; /* Ensure textarea takes full width */
+            }
+        
+            .input-box button {
+                width: 30%; /* Make the button full-width */
+                    /* Add space between textarea and button */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header section -->
+        <div class="header">
+            <div class="logo-text">
+                <img src="https://m.media-amazon.com/images/I/51DBd7O6GEL.jpg" alt="Logo">
+                <h3>Trasnsulate Mate...😎</h3>
+            </div>
+            <div class="hi">
+                <a href="C:\Users\Sai Daragani PB\Documents\AD4_Transulate_mate\stunt\second.html"><h3>🏠Home Page</h3></a>
+                <a href="profile.html"><h3>Profile</h3></a>
+                </div>
+        </div>
+       
+
+        <!-- Chatbox section -->
+        <div class="chatbox">
+            <center><div class= 'heading' ><h1>TRANSULATE MATE</h1></div></center>
+            <div class="messages" id="messages"></div>
+        </div>
+
+        <!-- Input box fixed at the bottom -->
+        <div class="input-box">
+            <textarea id="user-input" placeholder="Type a message..." rows="1"></textarea>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <p>&copy; 2024 Translate Mate - All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script>
+        // Add the initial message when the page loads
+        window.onload = function() {
+            addMessage("How can I help you?", "bot", true); // Initial bot message
+        };
+    
+        // Function to send a message to the chatbot
+        function sendMessage() {
+            const userInput = document.getElementById('user-input').value;
+            if (userInput.trim() === '') return;
+    
+            // Add the user's message to the chat window
+            addMessage(userInput, 'user');
+    
+            // Add a typing indicator for the bot's response
+            addTypingEffect();
+    
+            // Send the message to the server and get the chatbot's response
+            setTimeout(() => {
+                fetch('/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: userInput })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Remove the typing indicator and add the bot's response with letter-by-letter effect
+                    removeTypingEffect();
+                    typingEffect(data.response, 'bot'); // Typing effect for the bot
+                })
+                .catch(error => console.error('Error:', error));
+            }, 600); // Delay before bot responds
+        }
+    
+        // Function to add the typing effect
+        function addTypingEffect() {
+            const messagesContainer = document.getElementById('messages');
+    
+            const typingMessage = document.createElement('div');
+            typingMessage.classList.add('message', 'bot-message');
+            typingMessage.innerHTML = '<img src="https://m.media-amazon.com/images/I/51DBd7O6GEL.jpg" alt="Bot"><span class="typing-demo">chitti is typing...</span>';
+    
+            messagesContainer.appendChild(typingMessage);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight; // Scroll to the bottom
+        }
+    
+        // Function to remove the typing effect after the bot responds
+        function removeTypingEffect() {
+            const messagesContainer = document.getElementById('messages');
+            const typingMessage = messagesContainer.querySelector('.typing-demo');
+            if (typingMessage) {
+                typingMessage.parentElement.remove();
+            }
+        }
+    
+        // Function to add messages to the chat window
+        function addMessage(content, sender, isInitial = false) {
+            const messagesContainer = document.getElementById('messages');
+
+    // Create the main message container
+        const message = document.createElement('div');
+        message.classList.add('message', sender + '-message');
+        message.style.display = 'flex';
+        message.style.alignItems = 'center';
+        message.style.gap = '10px'; // Space between image and text
+        message.style.marginBottom = '10px';
+        message.style.flexDirection = sender === 'user' ? 'row-reverse' : 'row'; // Adjust order
+
+        // Create the image element
+        const imgElement = document.createElement('img');
+        imgElement.src = sender === 'user' 
+            ? 'https://static.vecteezy.com/system/resources/previews/008/442/086/non_2x/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg'
+            : 'https://m.media-amazon.com/images/I/51DBd7O6GEL.jpg';
+        imgElement.alt = sender === 'user' ? 'User' : 'Bot';
+        imgElement.style.width = '40px';
+        imgElement.style.height = '40px';
+        imgElement.style.borderRadius = '50%'; // Circular image
+
+        // Create the text element
+        const textElement = document.createElement('span');
+        textElement.textContent = content;
+        //textElement.style.backgroundColor = sender === 'user' ? '#4a4a4a' : '#555';
+        textElement.style.color = '#fff';
+        textElement.style.padding = '10px';
+        textElement.style.borderRadius = '10px';
+        textElement.style.textAlign = sender === 'user' ? 'right' : 'left';
+
+        // Append image and text to the message container
+        message.appendChild(imgElement);
+        message.appendChild(textElement);
+
+        // Append the message to the messages container
+        messagesContainer.appendChild(message);
+    
+            if (!isInitial) {
+                document.getElementById('user-input').value = ''; // Clear the input
+            }
+            messagesContainer.scrollTop = messagesContainer.scrollHeight; // Scroll to the bottom
+        }
+    
+        // Function for the typing effect: Prints letter by letter
+        function typingEffect(message, sender) {
+            const messagesContainer = document.getElementById('messages');
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', sender + '-message');
+    
+            const imgElement = document.createElement('img');
+            imgElement.src = sender === 'bot' 
+                ? 'https://m.media-amazon.com/images/I/51DBd7O6GEL.jpg'
+                : 'https://static.vecteezy.com/system/resources/previews/008/442/086/non_2x/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg';
+            imgElement.alt = sender === 'bot' ? 'Bot' : 'User';
+    
+            const textElement = document.createElement('span');
+            textElement.textContent = ''; // Start with an empty string
+    
+            messageElement.appendChild(imgElement);
+            messageElement.appendChild(textElement);
+            messagesContainer.appendChild(messageElement);
+    
+            let index = 0;
+    
+            const interval = setInterval(() => {
+                textElement.textContent += message.charAt(index);
+                index++;
+    
+                if (index === message.length) {
+                    clearInterval(interval);
+                }
+            }, 100); // Adjust typing speed
+        }
+    
+        // Add Enter key support for sending messages
+        document.getElementById('user-input').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Prevent newline
+                sendMessage();
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>
