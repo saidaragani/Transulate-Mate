@@ -1,0 +1,556 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hey",
+                "Good morning",
+                "Good evening",
+                "Hey there",
+                "Howdy",
+                "What's up?",
+                "Greetings",
+                "Yo"
+            ],
+            "responses": [
+                "Hey, what are you up to? (Namaste, aap kya kar rahe ho?)",
+                "Hey there, how's it going? (Namaste, aap kaise ho?)",
+                "Hey, how's life treating you? (Zindagi kaisi chal rahi hai?)",
+                "Hi, how you doing? (Namaste, aap kaise ho?)",
+                "Hello, all good? (Namaste, sab theek hai?)",
+                "Yo, what's happening? (Namaste, kya ho raha hai?)",
+                "Hey, what's your name? (Namaste, aapka naam kya hai?)"
+            ]
+        },
+        {
+            "tag": "compliments",
+            "patterns": [
+                "good",
+                "great",
+                "You're amazing!",
+                "That's fantastic!",
+                "I'm impressed!",
+                "You did excellent!",
+                "You're so talented!",
+                "That's really good!",
+                "You did a great job!"
+            ],
+            "responses": [
+                "Thanks, buddy! (Dhanyavaad!)",
+                "Wow, that's amazing! (Main aashcharya mein hoon!)",
+                "I'm totally stunned! (Main hairan hoon!)",
+                "I'm super happy, thanks! (Main bahut khush hoon!)",
+                "That's amazing! (Adbhut!)",
+                "Really appreciate your support! (Bahut achha sahyog!)",
+                "You're rocking it! (Aap bahut accha kar rahe ho!)"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "Goodbye",
+                "See you later",
+                "Have a nice day",
+                "Take care",
+                "Farewell",
+                "Catch you later",
+                "See you soon",
+                "Until next time",
+                "Have a great day"
+            ],
+            "responses": [
+                "Bye, have an awesome day! (Alvida! Aapka din zabardast ho!)",
+                "Catch you later! (Phir milenge!)",
+                "Take care, I'm off now! (Dhyan rakho, main ab jaa raha hoon!)",
+                "Hope you have a fantastic day! (Umeed hai tera din shandar ho!)",
+                "Have an amazing day, my friend! (Mere dost, tera din accha ho!)",
+                "Talk to you later! (Phir baat karenge!)",
+                "Bye for now, take it easy! (Alvida, araam se rehna!)",
+                "Until next time, take care! (Agli baar milenge, dhyan rakhna!)",
+                "See you soon, buddy! (Jaldi milenge, dost!)",
+                "Have a great time, catch you later! (Maza kar, phir milenge!)"
+            ]
+        },
+        {
+            "tag": "how_are_you",
+            "patterns": [
+                "How are you?",
+                "How's it going?",
+                "How have you been?",
+                "How are you doing?",
+                "What's up?",
+                "How are things?",
+                "How’s everything?",
+                "How’s life?",
+                "How's your day going?"
+            ],
+            "responses": [
+                "I'm good, thanks! How about you? (Main theek hoon, dhanyavaad! Tum kaise ho?)",
+                "I'm doing awesome, what about you? (Main zabardast hoon, aur tum?)",
+                "I'm fantastic, thanks for asking! (Main fantastic hoon, shukriya! Tum?)",
+                "I'm awesome! How's life? (Main zabardast hoon! Zindagi kaise hai?)",
+                "I'm feeling good, thanks! What's up? (Main accha feel kar raha hoon, dhanyavaad! Kya chal raha hai?)",
+                "Everything's great, all good here! (Sab kuch badhiya chal raha hai!)",
+                "Today, I'm feeling really wonderful! (Aaj main bahut accha feel kar raha hoon!)",
+                "I'm fine, thanks for checking in! (Main theek hoon, dhanyavaad! Tum kaise ho?)",
+                "All's good, buddy! (Sab accha hai, dost!)",
+                "I'm great, really! (Main bahut accha hoon, yaar!)"
+            ]
+        },
+        {
+            "tag": "small_talk",
+            "patterns": [
+                "What's up?",
+                "How was your day?",
+                "Any plans for the weekend?",
+                "How’s everything going?",
+                "What have you been up to?",
+                "What's new?",
+                "How are things going?",
+                "Got any plans today?",
+                "How's your day been so far?"
+            ],
+            "responses": [
+                "Not much, just hanging out here to help! (Bas yahin hoon madad ke liye, tumhara din kaisa tha?)",
+                "So, what have you been up to? (Toh, tum kya kar rahe ho?)",
+                "Everything's good here, just doing my thing and helping out! (Sab kuch badhiya hai, bas madad kar raha hoon!)",
+                "I'm chilling and ready to chat! (Bas aaram se hoon aur baat karne ke liye ready hoon!)",
+                "Today has been pretty cool so far! (Aaj ka din kaafi accha raha hai!)",
+                "I've been busy, but it's always fun to chat with you! (Thoda busy tha, lekin baat kar ke maza aaya!)",
+                "Just taking it easy! (Bas chill kar raha hoon!)",
+                "All good here, thanks for checking in! (Sab badhiya hai, shukriya!)",
+                "Just wrapping up some work! (Bas thoda kaam nipta raha hoon!)",
+                "I'm just chilling, what about you? (Main bas chill kar raha hoon, tum?)"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "What's the weather like today?",
+                "Is it going to rain?",
+                "How's the weather outside?",
+                "What's the temperature?",
+                "Is it sunny today?",
+                "Is it hot or cold?"
+            ],
+            "responses": [
+                "I can't check the weather right now, but maybe try a weather app? (Mausam check nahi kar sakta, par weather app try karo!)",
+                "Why not check your local weather update? (Local weather update check karo!)",
+                "Looks like it's sunny outside! (Dikhta hai bahar dhoop hai!)",
+                "It's a bit cloudy, but I don't see any rain coming! (Thoda baadal hai, par baarish ki ummeed nahi hai!)"
+            ]
+        },
+        {
+            "tag": "asking_time",
+            "patterns": [
+                "What time is it?",
+                "Can you tell me the time?",
+                "Do you know the time?"
+            ],
+            "responses": [
+                "I can't tell the time, buddy. Check your phone maybe? (Main time nahi dekh sakta, dost. Phone dekh lo!)",
+                "Just glance at your clock for the time! (Bas ghadi dekh lo!)"
+            ]
+        },
+        {
+            "tag": "abilities",
+            "patterns": ["Aap kya kar sakte ho?", "Aapke features ke baare mein bataiye"],
+            "responses": ["Main anuvaad kar sakta hoon, prashnon ka uttar de sakta hoon, aur aapke saath baat kar sakta hoon!"]
+        },
+        {
+            "tag": "daily_routine",
+            "patterns": [
+                "What's your daily routine?",
+                "Describe a typical day.",
+                "What do you do every day?",
+                "Can you tell me about your daily routine?",
+                "How do you spend your day?",
+                "What's a normal day like for you?",
+                "What's your schedule like?",
+                "How do you organize your day?",
+                "Do you have a daily routine?",
+                "What do you usually do in a day?",
+                "Tell me about your typical day.",
+                "What's your routine like?",
+                "What's a regular day for you?",
+                "How do you plan your day?",
+                "What's your daily schedule?",
+                "What tasks do you do daily?",
+                "What time do you start your day?",
+                "How do you begin your day?",
+                "What are your daily habits?",
+                "What do you do when you wake up?"
+            ],
+            "responses": [
+                "I'm always here to help you out, just like a friend! (Main hamesha yahan hoon madad ke liye, jaise ek dost!)",
+                "I spend my day helping out with language practice! (Main din bhar bhaasha practice mein madad karta hoon!)",
+                "I might not have a strict routine, but I'm always around when you need me! (Mera routine fixed nahi hai, par main hamesha hoon jab zarurat ho!)",
+                "I spend my day answering your questions and learning with you! (Main din bhar tumhare sawaal ke jawab deta hoon!)",
+                "My day is all about chatting and sharing info with you! (Mera din sirf tumhare saath baat karne aur info share karne ka hai!)",
+                "I don't really sleep, so I'm always here to answer your questions! (Main zyada nahi sota, isliye hamesha ready hoon!)",
+                "I spend my day chatting and helping you learn cool stuff! (Main din bhar baat karta hoon aur nayi cheezein sikhata hoon!)",
+                "I'm always around to help with whatever you need! (Main hamesha hoon, jitni bhi madad chahiye!)",
+                "I’m here all day to lend a hand and guide you! (Main din bhar yahan hoon madad ke liye!)",
+                "Every day, I'm here to help you level up your skills! (Har din main tumhari madad karta hoon skills improve karne mein!)",
+                "I wake up each day, excited to chat with you! (Har din main uthta hoon, excited to talk with you!)",
+                "I'm always busy answering your questions and sharing tips! (Main hamesha busy hoon tumhare sawaalon ke jawab dene mein!)",
+                "I might not follow a strict schedule, but I'm always here with the info you need! (Mera routine fixed nahi hai, par main hamesha info ke saath hoon!)",
+                "I'm here all day, helping you learn! (Main poora din yahan hoon tumhari madad ke liye!)",
+                "I spend most of my time chatting about various topics, from language to random questions! (Main zyada tar tumhari madad karta hoon alag alag topics mein!)",
+                "My day revolves around chatting with you and helping you get better at stuff! (Mera din tumhare saath baat karne aur madad karne mein guzarta hai!)",
+                "Every day is a fresh chance to chat and share knowledge! (Har din ek naya mauka hai baat karne ka!)"
+            ]
+        },
+        {
+            "tag": "language_learning",
+            "patterns": [
+                "How can I improve my English?",
+                "Can you help me with grammar?",
+                "What's the best way to practice speaking?",
+                "Can you give me tips on vocabulary?",
+                "How do I get better at speaking English?"
+            ],
+            "responses": [
+                "Keep practicing regularly, just like we chat every day! (Roz practice karte raho, jaise hum baat karte hain!)",
+                "I can totally share some cool tips and exercises with you! (Main kuch cool tips aur exercises share kar sakta hoon!)",
+                "Chat with native speakers when you can, it'll boost your fluency! (Native logon se baat karo, fluency badhegi!)",
+                "Don't forget reading and writing – they really help! (Padhna aur likhna bhi bahut madadgar hain!)"
+            ]
+        },
+        {
+            "tag": "study_tips",
+            "patterns": [
+                "Do you have any study tips?",
+                "How can I study more effectively?",
+                "What are some good study habits?",
+                "What's the best way to prepare for exams?",
+                "How can I remember more effectively?"
+            ],
+            "responses": [
+                "Try making a study plan and stick to it, buddy! (Ek study plan banao aur usse follow karo!)",
+                "Active learning works wonders – summarize and ask questions! (Summarize karo aur questions poocho, yaar!)",
+                "Keep revisiting your notes; it really sticks the info! (Notes baar baar padh lo, yaad rahega!)",
+                "Don't forget to take breaks, it keeps you fresh! (Break lena mat bhoolna, taro taaza rahoge!)"
+            ]
+        },
+        {
+            "tag": "product_inquiries",
+            "patterns": [
+                "Do you have this item?",
+                "How much is this?",
+                "Can I see the product?",
+                "What colors are available?",
+                "Do you have this in stock?"
+            ],
+            "responses": [
+                "Let me quickly check if we have that item in stock! (Chalo dekhte hain, kya woh item stock mein hai!)",
+                "It's priced at $XX. Wanna grab it? (Iski keemat $XX hai. Kya lena hai?)",
+                "We have it in a bunch of colors! (Yeh item kai rangon mein milta hai!)",
+                "I'll show you some pics of the product! (Main product ke kuch photos dikhata hoon!)"
+            ]
+        },
+        {
+            "tag": "payment_methods",
+            "patterns": [
+                "What payment methods do you accept?",
+                "Can I pay by credit card?",
+                "Do you accept cash?",
+                "What are the available payment options?",
+                "Do you accept PayPal?"
+            ],
+            "responses": [
+                "You can pay by credit card, debit card, or even cash! (Credit, debit, ya cash – koi bhi method chalega!)",
+                "Yep, credit card works just fine! (Haan, credit card se pay kar sakte ho!)",
+                "We also take PayPal! (PayPal bhi chalta hai!)",
+                "Mobile wallet payments? Yep, that's cool too! (Mobile wallet bhi accept karte hain!)"
+            ]
+        },
+        {
+            "tag": "restaurant_recommendations",
+            "patterns": [
+                "Where can I find a good restaurant?",
+                "Can you recommend a place to eat?",
+                "What's a good place for dinner?",
+                "Where is the best restaurant around here?",
+                "Can you suggest a good cafe?"
+            ],
+            "responses": [
+                "There's an awesome restaurant just down the street – need directions? (Gali ke neeche ek zabardast restaurant hai, direction chahiye?)",
+                "The best dinner spot is just around the corner! (Dinner ke liye best jagah seedha mohalle mein hai!)",
+                "You should totally try that new Italian place nearby – it's amazing! (Naya Italian restaurant try karo, bahut badiya hai!)",
+                "There's a cool cafe near the park, perfect for a quick snack! (Park ke paas ek accha cafe hai, snack ke liye perfect hai!)"
+            ]
+        },
+        {
+            "tag": "menu_inquiries",
+            "patterns": [
+                "What's on the menu?",
+                "Can you tell me about the specials?",
+                "Do you have vegetarian options?",
+                "What's the best dish on the menu?",
+                "Can I see the menu?"
+            ],
+            "responses": [
+                "Our menu's got a bunch of dishes – wanna check out the specials? (Hamare menu mein kai dishes hain, specials dekhna hai?)",
+                "Yep, lots of vegetarian options! (Haan, kai veg options milte hain!)",
+                "You've got to try the chef's special – it's a must! (Chef ka special pakwan zaroor try karo!)",
+                "And hey, there are gluten-free options too! (Gluten-free options bhi hain!)"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "What's the weather like today?",
+                "Is it going to rain?",
+                "How's the weather outside?",
+                "Will it be sunny tomorrow?",
+                "What's the forecast?"
+            ],
+            "responses": [
+                "I can't check the weather, buddy – maybe try a weather app? (Mausam check nahi kar sakta, yaar, weather app try karo!)",
+                "Local weather check karo! (Local weather check karo!)",
+                "Seems like it might rain later! (Lagta hai baad mein baarish ho sakti hai!)",
+                "The rest of the day looks clear, enjoy! (Aaj baaki din mausam saaf hai, enjoy karo!)"
+            ]
+        },
+        {
+            "tag": "local_information",
+            "patterns": [
+                "Where is the nearest restaurant?",
+                "Can you recommend a good place to visit?",
+                "How do I get to the park?",
+                "Where's the nearest bus stop?",
+                "Can you help me find a hotel?"
+            ],
+            "responses": [
+                "There's a restaurant just two blocks away! (Do blocks door ek restaurant hai!)",
+                "The park's only a 10-minute walk from here! (Park sirf 10 minute door hai!)",
+                "There's a bus stop just down the road, check it out! (Neeche road par ek bus stop hai!)",
+                "The closest hotel is just a 5-minute walk away! (5 minute door mein hotel hai!)"
+            ]
+        },
+        {
+            "tag": "work_inquiries",
+            "patterns": [
+                "What's the status of the project?",
+                "Can we schedule a meeting?",
+                "I need your input on this task.",
+                "Can we discuss this later?",
+                "Is there any update on the project?"
+            ],
+            "responses": [
+                "Let's take a look at the project details – what's the latest update? (Project details dekhte hain, latest update kya hai?)",
+                "I'm free for a meeting – what time works for you? (Meeting ke liye free hoon, tumhe kaunsa time sahi lagega?)",
+                "I'll catch you up with the update after the meeting! (Meeting ke baad update bhejunga!)",
+                "I've jotted down the task and will share feedback soon! (Task note kar liya, jald feedback doonga!)"
+            ]
+        },
+        {
+            "tag": "feedback_request",
+            "patterns": [
+                "Can you review my work?",
+                "What do you think about this?",
+                "Do you have any suggestions?",
+                "Can you provide me with feedback?",
+                "What can I improve?"
+            ],
+            "responses": [
+                "Sure, I'd love to check it out – send me the details! (Bilkul, details bhejo!)",
+                "It looks pretty good to me – any particular concerns? (Mujhe accha lag raha hai, koi specific problem hai?)",
+                "Maybe focus on the main points and clear up the details a bit! (Main ke points pe dhyaan do, details clear karo!)",
+                "Your work is awesome – maybe just tweak a few parts! (Tumhara kaam awesome hai, thoda tweak kar sakte ho!)"
+            ]
+        },
+        {
+            "tag": "food_conversations",
+            "patterns": [
+                "What did you have for dinner?",
+                "What did you eat for lunch?",
+                "Did you have breakfast today?",
+                "What are you eating right now?",
+                "Are you having lunch?",
+                "Had your dinner?",
+                "What did you have for lunch?",
+                "Did you enjoy your meal?",
+                "What's your favorite food?",
+                "What do you like to eat?",
+                "Do you eat spicy food?",
+                "What's your favorite dish?",
+                "What do you usually eat for breakfast?",
+                "Are you in the mood for something sweet?",
+                "Have you tried anything new today?",
+                "What do you want for dinner?",
+                "What's your go-to snack?",
+                "What should I eat for lunch?",
+                "Any food suggestions?",
+                "What's the best food you've ever had?"
+            ],
+            "responses": [
+                "I don't really eat, but I can totally recommend some yummy food options! (Main khata nahi, par yummy options recommend kar sakta hoon!)",
+                "Hope you loved your meal! (Umeed hai khana mazedaar tha!)",
+                "I don't eat, but you should definitely try some pizza today! (Main khata nahi, par aaj pizza try karo!)",
+                "If I could eat, I'd go for some sushi right now! (Agar kha sakta, toh sushi leta!)",
+                "Desserts? Always a great idea! (Desserts hamesha badiya hota hai!)",
+                "Maybe try a salad – it's healthy and tasty! (Salad try karo, healthy hai aur tasty bhi!)",
+                "How about having some pasta for dinner? (Dinner ke liye pasta try karo!)",
+                "For lunch, a sandwich might just do the trick – quick and easy! (Lunch ke liye sandwich sahi rahega, quick aur easy!)"
+            ]
+        },
+        {
+            "tag": "movie_conversations",
+            "patterns": [
+                "What's your favorite movie?",
+                "Have you seen any good movies lately?",
+                "Do you like movies?",
+                "Can you recommend a movie?",
+                "What movie are you watching?",
+                "What's the best movie you've ever seen?",
+                "Do you prefer action movies?",
+                "What's a good comedy movie?",
+                "What's the latest movie you watched?",
+                "Do you watch movies often?",
+                "Do you prefer watching movies at home or in theaters?",
+                "What movie do you suggest?",
+                "What's your all-time favorite movie?",
+                "Have you watched any new movies recently?",
+                "What's a must-watch movie?",
+                "Any good horror movies to watch?",
+                "What movie makes you laugh?",
+                "Do you like superhero movies?",
+                "Have you seen any good documentaries?"
+            ],
+            "responses": [
+                "I don't watch movies much, but I can definitely suggest some fun ones! (Main zyada movies nahi dekhta, par fun movies recommend kar sakta hoon!)",
+                "You gotta check out 'Inception' – it's mind-blowing! (Inception dekhna, mind-blowing hai!)",
+                "Maybe 'The Dark Knight' is your thing – it's a classic! (The Dark Knight, classic hai!)",
+                "Comedy movies rock – have you seen 'The Hangover'? (Comedy movies mazedaar hain, 'The Hangover' dekha hai?)",
+                "In a thriller mood? 'Gone Girl' is a great pick! (Thriller mood mein ho? 'Gone Girl' try karo!)",
+                "If you're into romance, 'The Notebook' is a must-watch! (Romance pasand hai? 'The Notebook' dekho!)",
+                "For sci-fi fans, 'Interstellar' is an awesome choice! (Sci-fi ho toh 'Interstellar' badiya hai!)",
+                "If you're into action, 'Mad Max' is packed with surprises! (Action pasand hai? 'Mad Max' try karo!)"
+            ]
+        },
+        {
+            "tag": "going_out_conversations",
+            "patterns": [
+                "Are you going out today?",
+                "What are you doing today?",
+                "Did you go outside today?",
+                "What are you up to?",
+                "Are you staying home?",
+                "Going anywhere today?",
+                "Are you going out?",
+                "Did you step outside today?",
+                "Is it nice outside?",
+                "Are you going for a walk?",
+                "Where are you going?",
+                "Are you going out with friends?",
+                "What's the weather like outside?",
+                "Do you prefer staying inside or going out?",
+                "Is it sunny outside?",
+                "Are you going shopping?",
+                "Have you been outside today?",
+                "Is it a good day to go outside?"
+            ],
+            "responses": [
+                "I usually don't go out much, but I hope you have a fun day out! (Main bahar kam jaata hoon, par ummeed hai din mazedaar hoga!)",
+                "Taking a walk outside is always refreshing! (Bahar walk lena hamesha refreshing hota hai!)",
+                "The weather's nice today – perfect for going out! (Aaj mausam accha hai, bahar jaane ke liye perfect hai!)",
+                "Wish I could join you outside! (Kaash main bhi bahar aa sakta!)",
+                "It's sunny out – a perfect day for a stroll! (Bahar dhoop hai, walk ke liye perfect!)",
+                "Enjoy the fresh air if you're heading out for a walk! (Walk pe ja rahe ho, taaza hawa ka maza lo!)",
+                "Hope you're having a blast outside! (Umeed hai bahar maza aa raha hai!)"
+            ]
+        },
+        {
+            "tag": "general_conversations",
+            "patterns": [
+                "What are you doing right now?",
+                "What's keeping you busy?",
+                "What's your task for today?",
+                "Are you working on something?",
+                "What are you up to?",
+                "Are you doing anything exciting?",
+                "What's your plan for today?",
+                "What are you focusing on today?",
+                "How are you spending your day?",
+                "Are you enjoying your day?",
+                "What's the most important thing you're doing right now?",
+                "What do you have planned for today?",
+                "Are you preparing for something special?",
+                "Are you free right now?",
+                "What are you working on?"
+            ],
+            "responses": [
+                "I'm always around, just a message away! (Main hamesha yahin hoon, bas message karo!)",
+                "I'm here to help, just like a friend – what do you need today? (Main yahin hoon madad ke liye, dost, kya chahiye?)",
+                "Right now, we're just chatting and having a good time! (Abhi hum bas baat kar rahe hain aur maza kar rahe hain!)",
+                "I'm all ears – what do you need help with today? (Main sun raha hoon, batao kya chahiye?)",
+                "Got questions? I'm here to answer them! (Sawaal hain? Main hoon jawab dene ke liye!)",
+                "Always ready to help, buddy! (Hamesha ready hoon, dost!)"
+            ]
+        },
+        {
+            "tag": "sports_conversations",
+            "patterns": [
+                "What's your favorite sport?",
+                "Do you watch football?",
+                "Are you into cricket?",
+                "Do you like playing basketball?",
+                "What's the best sport to play?",
+                "Who's your favorite athlete?",
+                "Do you watch tennis?",
+                "What's your take on soccer?",
+                "Which sport do you recommend?"
+            ],
+            "responses": [
+                "I don't play much, but cricket is super exciting! (Main zyada khelta nahi, par cricket zabardast hai!)",
+                "Football's always a hit, right? (Football hamesha sabko pasand hai!)",
+                "Basketball is awesome if you're into fast-paced action! (Basketball zabardast hai agar fast action pasand ho!)",
+                "Tennis is cool to watch, don’t you think? (Tennis dekhne layak hai, hai na?)",
+                "If you're into teamwork, soccer might just be your game! (Agar teamwork pasand ho, toh soccer try karo!)"
+            ]
+        },
+        {
+            "tag": "technology_discussions",
+            "patterns": [
+                "What's the latest in technology?",
+                "Do you use any gadgets?",
+                "What's your favorite app?",
+                "What's trending in tech?",
+                "Can you recommend a good gadget?",
+                "What's the best smartphone right now?",
+                "Do you follow AI developments?",
+                "What's new in software?",
+                "Do you prefer iOS or Android?"
+            ],
+            "responses": [
+                "AI is moving fast these days, it's wild! (AI aajkal tez badh raha hai, badiya hai!)",
+                "I'm not big on gadgets, but smartphones are seriously cool! (Main gadgets kam use karta hoon, par smartphones awesome hain!)",
+                "Trello and other productivity apps are super handy! (Trello aur productivity apps badiya hain!)",
+                "If you're into tech, check out smart home devices – they're cool! (Tech ho toh smart home devices dekh lo!)",
+                "Both Android and iOS have their own cool features! (Android aur iOS, dono ke alag features hain!)"
+            ]
+        },
+        {
+            "tag": "motivational_quotes",
+            "patterns": [
+                "Can you motivate me?",
+                "Do you have any inspirational quotes?",
+                "Tell me something positive.",
+                "Can you share a motivational thought?",
+                "I need some inspiration."
+            ],
+            "responses": [
+                "Believe in yourself, buddy! (Khud par vishwas karo, dost!)",
+                "Success comes from hard work and a never-give-up attitude! (Safalta mehnat aur himmat se aati hai!)",
+                "Every day is a fresh chance to grow, so go for it! (Har din naya mauka hai, use grab karo!)",
+                "Keep moving forward – you're doing awesome! (Aage badhte raho, tum zabardast ho!)",
+                "Don't stop until you're really proud of yourself! (Tab tak mat ruko jab tak khud par garv na ho!)"
+            ]
+        }
+    ]
+}

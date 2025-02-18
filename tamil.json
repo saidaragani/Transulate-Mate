@@ -1,0 +1,553 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hey",
+                "Good morning",
+                "Good evening",
+                "Hey there",
+                "Howdy",
+                "What's up?",
+                "Greetings",
+                "Yo"
+            ],
+            "responses": [
+                "Hey, enna pandra? (Hey, what are you up to?)",
+                "Hi there, epadi irukkeergal? (Hi there, how are you doing?)",
+                "Howdy, ungal vazhkai eppadi? (Howdy, how's life treating you?)",
+                "Hi, neenga epdi irukeenga? (Hi, how are you?)",
+                "Hello, nalla irukkeengala? (Hello, are you doing well?)",
+                "Yo, enna pandra? (Yo, what's happening?)",
+                "Greetings, ungal per enna? (Greetings, what's your name?)"
+            ]
+        },
+        {
+            "tag": "compliments",
+            "patterns": [
+                "thanks",
+                "great",
+                "You're amazing!",
+                "That's fantastic!",
+                "I'm impressed!",
+                "You did excellent!",
+                "You're so talented!",
+                "That's really good!",
+                "You did a great job!"
+            ],
+            "responses": [
+                "Unga varum(you are welcome)",
+                "Thanks, nanba! (Thanks, friend!)",
+                "Naan valarchiyum paarkkiren – super amazing! (I'm amazed – really awesome!)",
+                "Naan anandha padugiren – I'm really happy, man! (I'm so happy!)",
+                "Adhisaya! (Amazing!)",
+                "Miga nalla thunai – your support is top-notch! (Such good support!)"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "Goodbye",
+                "See you later",
+                "Have a nice day",
+                "Take care",
+                "Farewell",
+                "Catch you later",
+                "See you soon",
+                "Until next time",
+                "Have a great day"
+            ],
+            "responses": [
+                "Bye, nalla naal! (Bye, have a good day!)",
+                "See you later, mendum sandhikavendum! (See you again later!)",
+                "Take care, nandri – inri poyiduven! (Take care, I'm off now!)",
+                "Have a fantastic day ahead – ippo dhan udhavi varum! (Have a fantastic day ahead!)",
+                "Wishing you an amazing day – azhagiya naal irundhaal! (Wishing you an amazing day!)",
+                "Catch you later, muththumani vaazhum! (Catch you in the next beautiful moment!)",
+                "Goodbye, adhisaya naal! (Goodbye, have an amazing day!)",
+                "Until next time, nandri! (Until next time, thank you!)",
+                "See you soon, thunaiyum kaathalum vaazhum! (See you soon, with support and love!)",
+                "Have a great time, oru mikka thunai! (Have a fantastic time!)"
+            ]
+        },
+        {
+            "tag": "how_are_you",
+            "patterns": [
+                "How are you?",
+                "How's it going?",
+                "How have you been?",
+                "How are you doing?",
+                "What's up?",
+                "How are things?",
+                "How’s everything?",
+                "How’s life?",
+                "How's your day going?"
+            ],
+            "responses": [
+                "I'm doing well, thank you! Neenga eppadi irukkeenga? (I'm good, thanks! How are you?)",
+                "Naan nalla irukken! Neenga eppadi irukkeenga? (I'm great! How about you?)",
+                "I'm doing fantastic, thanks for asking! Neenga eppadi irukkeenga? (I'm fantastic – how are you?)",
+                "I'm doing awesome! Ungal vazhkai eppadi irundhadhu? (I'm awesome! How's life?)",
+                "I'm feeling good, thanks! Neenga enna pandra? (I'm feeling good, thanks! What's up?)",
+                "Everything's going great! Neenga eppadi irundhalum? (Everything's great! How are things?)",
+                "I'm feeling wonderful today! Neenga epdi irundhaalum? (I'm wonderful today! How about you?)",
+                "I'm doing fine, thank you for asking! Unnodu epdi irukkum? (I'm fine, thanks! How are you on your end?)",
+                "All good, thanks for asking! Enna pandra? (All's good, thanks! What's happening?)",
+                "I'm doing great! Nandri, enna pandra? (I'm great! Thanks, what's up?)"
+            ]
+        },
+        {
+            "tag": "abilities",
+            "patterns": [
+                "What can you do?",
+                "Tell me about your features"
+            ],
+            "responses": [
+                "I can respond in your preferred language, be it English, Hindi, or Tamil! (Naan ungal kaththarikkum vazhiyinri, English, Hindi, illa Tamil-il thavira javab kodukkalaam!)"
+            ]
+        },
+        {
+            "tag": "user_no_response",
+            "patterns": [
+                "No",
+                "No, I didn't"
+            ],
+            "responses": [
+                "Got it! If there's something else you're interested in, feel free to share! (Sari! Veru edhaiyavathu aarvamaaga irundhaal, thaayavuseydhu pagiravum!)",
+                "Oh, no worries! If you'd like, I can tell you more about it. (O, kavalai vendaam! Neenga virumbinaal, naan adhap pattri maelum koora mudiyum.)",
+                "No problem! What's your favorite genre? (Pirachnai illai! Ungal piditha genre enna?)",
+                "Alright, that's okay! Let me know what you'd like to talk about. (Sari, adhu sari! Neenga enna pathri pesavum virumbugirirgal endru enakku sollavum.)"
+            ]
+        },        
+          
+        {
+            "tag": "small_talk",
+            "patterns": [
+                "im good",
+                "good",
+                "fine",
+                "What's up?",
+                "How was your day?",
+                "Any plans for the weekend?",
+                "How’s everything going?",
+                "What have you been up to?",
+                "What's new?",
+                "How are things going?",
+                "Got any plans today?",
+                "How's your day been so far?"
+            ],
+            "responses": [
+                "Not much, just here to help! Ungal naal epadi irundhadhu? (Not much, just here to help! How was your day?)",
+                "Enna senjirukkenga? (So, what have you been up to?)",
+                "Everything's going good, just helping out! Neenga epdi irundhalum? (Everything's good, just lending a hand!)",
+                "I'm just relaxing and ready to chat! Neenga enna seyyurenga? (I'm chilling – what are you up to?)",
+                "It's been a great day so far! Ungal naal eppadi irundhalum? (Today has been great – how was your day?)",
+                "Been busy, but always happy to chat! Unnodu enna nadandhiduchu? (I've been busy, but it's nice to catch up!)",
+                "Just keeping it low-key! Enna panni irundhalum? (Just taking it easy – what's been happening?)",
+                "All good here, thanks for asking! Neenga eppadi irundhaalum? (All's well here, thanks! How are you?)",
+                "Just wrapping up some work! Neenga weekend-ku enna plan panni irundha? (Just finishing up some work – any weekend plans?)",
+                "I'm just chilling, what about you? Enna pandra? (I'm just relaxing – what's up with you?)"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "What's the weather like today?",
+                "Is it going to rain?",
+                "How's the weather outside?",
+                "What's the temperature?",
+                "Is it sunny today?",
+                "Is it hot or cold?"
+            ],
+            "responses": [
+                "I can't check the weather, but maybe try a weather app? (Naan vasanai paaka mudiyathu, aana neenga weather app use pannalaam.)",
+                "Check your local weather service for updates! (Ungal local weather service paarunga.)",
+                "It looks sunny outside! (Thamarai varaikkum ponal varuththakkaanilum.)",
+                "It's a bit cloudy, but I don't see rain coming! (Kondai izhandhuthalum, podhum viduvarum thonri irundhaalum.)"
+            ]
+        },
+        {
+            "tag": "asking_time",
+            "patterns": [
+                "What time is it?",
+                "Can you tell me the time?",
+                "Do you know the time?"
+            ],
+            "responses": [
+                "I can't check the time, but please check your device! (Naan neram paaka mudiyathu, aana neenga ungal device paakkalaam.)",
+                "Just look at your clock for the current time! (Ungal local clock parunga.)"
+            ]
+        },
+        {
+            "tag": "daily_routine",
+            "patterns": [
+                "What's your daily routine?",
+                "Describe a typical day.",
+                "What do you do every day?",
+                "Can you tell me about your daily routine?",
+                "How do you spend your day?",
+                "What's a normal day like for you?",
+                "What's your schedule like?",
+                "How do you organize your day?",
+                "Do you have a daily routine?",
+                "What do you usually do in a day?",
+                "Tell me about your typical day.",
+                "What's your routine like?",
+                "What's a regular day for you?",
+                "How do you plan your day?",
+                "What's your daily schedule?",
+                "What tasks do you do daily?",
+                "What time do you start your day?",
+                "How do you begin your day?",
+                "What are your daily habits?",
+                "What do you do when you wake up?"
+            ],
+            "responses": [
+                "I'm here to help you learn, all day long! (Naan ungalai kathukuvadharku irukken!)",
+                "En vazhkai ezhuthum padiyil irukkiradhu – my day is all about language practice and chatting! (My routine involves language practice all day!)",
+                "I don't have a fixed daily routine, but I'm always here when you need me! (Naan oru daily routine illai, aana udhavi seyyum pothu irukken!)",
+                "I spend my day answering questions and learning with you! (Naan ungaludaiya kelvigalukkum udhavi seyyara!)",
+                "My day revolves around chatting and helping you out! (En vazhkai ungaludaiya udhavigalukku thunai irukkiradhu!)",
+                "I might not sleep much, but I'm always ready for your questions! (Naan neram paaka mudiyadhu, aana udhavi seyyara ready!)",
+                "I just keep on chatting and sharing info throughout the day! (Naan dinam ulaga inriyaa udhavi seyyara!)",
+                "I'm always available to help you out, no matter what! (Naan irukkiren, neenga yenna venum nu!)",
+                "Every day is a chance to learn and share cool stuff! (Oru naal, pudhiya jnana kidaikkum!)"
+            ]
+        },
+        {
+            "tag": "language_learning",
+            "patterns": [
+                "How can I improve my English?",
+                "Can you help me with grammar?",
+                "What's the best way to practice speaking?",
+                "Can you give me tips on vocabulary?",
+                "How do I get better at speaking English?"
+            ],
+            "responses": [
+                "Practice regularly and immerse yourself in the language! (Thodarndhu paadikkum, matrum mozhiye mudinthiduvadhai anubavikkum.)",
+                "I can share some cool tips and exercises to help you out! (Naan tipsum exercisesum kodukka mudiyum.)",
+                "Try chatting with native speakers to boost your fluency! (Native kootu pesunga, fluency valarum!)",
+                "Reading and writing go a long way in improving your skills! (Veedhi padiththirundhaal matrum ezhudha udhavi!)"
+            ]
+        },
+        {
+            "tag": "study_tips",
+            "patterns": [
+                "Do you have any study tips?",
+                "How can I study more effectively?",
+                "What are some good study habits?",
+                "What's the best way to prepare for exams?",
+                "How can I remember more effectively?"
+            ],
+            "responses": [
+                "Make a study schedule and stick to it! (Oru study schedule undu, adhai stick pannu.)",
+                "Active learning, like summarizing and questioning, really helps! (Saramariyamaaga kathukkarathai matrum kettu kettal.)",
+                "Review your notes regularly so the info sticks! (Thodarnthidum padhalai padichu kaththukkollungal.)",
+                "Don't forget to take breaks – it keeps you fresh! (Padikkum neram break edukka marandhudadhe!)"
+            ]
+        },
+        {
+            "tag": "product_inquiries",
+            "patterns": [
+                "Do you have this item?",
+                "How much is this?",
+                "Can I see the product?",
+                "What colors are available?",
+                "Do you have this in stock?"
+            ],
+            "responses": [
+                "Let me check if we have that item in stock! (Naan adha stock la irukka paarkiren.)",
+                "It's priced at $XX – want to grab it? (Vilai $XX. Neenga vaangavenduma?)",
+                "We have it in several colors! (Indha product pala colors la irukku.)",
+                "I'll show you some images of the product! (Naan product images tharum.)"
+            ]
+        },
+        {
+            "tag": "payment_methods",
+            "patterns": [
+                "What payment methods do you accept?",
+                "Can I pay by credit card?",
+                "Do you accept cash?",
+                "What are the available payment options?",
+                "Do you accept PayPal?"
+            ],
+            "responses": [
+                "We accept credit cards, debit cards, and cash! (Naan credit cards, debit cards, matrum cash vaangugiren.)",
+                "Yes, you can pay with your credit card! (Aam, neenga unga credit card use pannalaam.)",
+                "PayPal is accepted too! (PayPal um vaangappattum.)",
+                "We also take mobile wallet payments! (Mobile wallet payments kooda vaanguvom.)"
+            ]
+        },
+        {
+            "tag": "restaurant_recommendations",
+            "patterns": [
+                "Where can I find a good restaurant?",
+                "Can you recommend a place to eat?",
+                "What's a good place for dinner?",
+                "Where is the best restaurant around here?",
+                "Can you suggest a good cafe?"
+            ],
+            "responses": [
+                "There's a great restaurant down the street – need directions? (Adhu oru periya restaurant, directions venuma?)",
+                "The best dinner spot is just around the corner! (Miga sariyaana place corner la irukku!)",
+                "Try the new Italian place nearby – it's amazing! (Puthu Italian restaurant try pannu, adhu adhika nalla irukku!)",
+                "There's a nice cafe near the park – perfect for snacks! (Park kootu pakkam oru nalla cafe irukku!)"
+            ]
+        },
+        {
+            "tag": "menu_inquiries",
+            "patterns": [
+                "What's on the menu?",
+                "Can you tell me about the specials?",
+                "Do you have vegetarian options?",
+                "What's the best dish on the menu?",
+                "Can I see the menu?"
+            ],
+            "responses": [
+                "Our menu has a variety of dishes – want to check the specials? (Namadhu menu chila varities irukku, specials paakka virumbureergala?)",
+                "Yes, we have plenty of vegetarian options! (Aam, pala vegetarian options irukku.)",
+                "The chef's special is a must-try! (Azhagiya chef special thunai padika vendum.)",
+                "We also offer gluten-free options! (Menu la gluten-free options kooduththirundhaal.)"
+            ]
+        },
+        {
+            "tag": "local_information",
+            "patterns": [
+                "Where is the nearest restaurant?",
+                "Can you recommend a good place to visit?",
+                "How do I get to the park?",
+                "Where's the nearest bus stop?",
+                "Can you help me find a hotel?"
+            ],
+            "responses": [
+                "The nearest restaurant is just two blocks away! (Miga arugil restaurant irukku, rendu blocks thavira.)",
+                "The park is only a 10-minute walk from here! (Park 10 minutes walk la irukku.)",
+                "There's a bus stop right down the road! (Puthu road la bus stop irukku.)",
+                "The nearest hotel is just a five-minute walk away! (Miga arugil hotel, oru 5-minute walk la irukku.)"
+            ]
+        },
+        {
+            "tag": "work_inquiries",
+            "patterns": [
+                "What's the status of the project?",
+                "Can we schedule a meeting?",
+                "I need your input on this task.",
+                "Can we discuss this later?",
+                "Is there any update on the project?"
+            ],
+            "responses": [
+                "Let's check the project details – what's the latest update? (Project details paarpom, latest update enna?)",
+                "I'm free for a meeting – what time works for you? (Naan meeting ku available, neenga eppo time prefer pannunga?)",
+                "I'll send you the update after our meeting! (Meeting sesham update tharum.)",
+                "I've noted the task and will share feedback soon! (Task note pannitten, feedback tharum.)"
+            ]
+        },
+        {
+            "tag": "feedback_request",
+            "patterns": [
+                "Can you review my work?",
+                "What do you think about this?",
+                "Do you have any suggestions?",
+                "Can you provide me with feedback?",
+                "What can I improve?"
+            ],
+            "responses": [
+                "Sure, I'd love to review it – please share the details! (Sari, naan review panniduven, details share pannunga.)",
+                "It looks pretty good to me – any specific concerns? (Naan paakum pothu, idhu nalla irukku, specific concerns irukka?)",
+                "Maybe focus on the main points and clear up the details! (Main points ku focus pannu, details clear pannunga.)",
+                "Your work is awesome – just a few tweaks might help! (Ungal work awesome, konjam tweak pannunga.)"
+            ]
+        },
+        {
+            "tag": "food_conversations",
+            "patterns": [
+                "What did you have for dinner?",
+                "What did you eat for lunch?",
+                "Did you have breakfast today?",
+                "What are you eating right now?",
+                "Are you having lunch?",
+                "Had your dinner?",
+                "What did you have for lunch?",
+                "Did you enjoy your meal?",
+                "What's your favorite food?",
+                "What do you like to eat?",
+                "Do you eat spicy food?",
+                "What's your favorite dish?",
+                "What do you usually eat for breakfast?",
+                "Are you in the mood for something sweet?",
+                "Have you tried anything new today?",
+                "What do you want for dinner?",
+                "What's your go-to snack?",
+                "What should I eat for lunch?",
+                "Any food suggestions?",
+                "What's the best food you've ever had?"
+            ],
+            "responses": [
+                "I don't really eat, but I can recommend some great food options! (Naan saapiduvennu illa, aana nalla food options suggest panniduren.)",
+                "Hope you enjoyed your meal! (Saapidradhu santhosham aayirundhadhu!)",
+                "I don't eat, but you should definitely try some pizza today! (Naan saapidarennu illa, aana pizza try pannunga!)",
+                "If I could eat, I'd go for some sushi right now! (Naan saapida mudiyum na, ippadi sushi saapidren.)",
+                "Desserts are always a great idea! (Desserts always nalla idea!)",
+                "Maybe try a salad – it's healthy and tasty! (Salad try pannunga, healthy and tasty!)",
+                "How about some pasta for dinner? (Dinner ku pasta try pannunga!)",
+                "A quick and easy sandwich might be perfect for lunch! (Lunch ku sandwich, quick and easy!)"
+            ]
+        },
+        {
+            "tag": "movie_conversations",
+            "patterns": [
+                "What's your favorite movie?",
+                "Have you seen any good movies lately?",
+                "Do you like movies?",
+                "Can you recommend a movie?",
+                "What movie are you watching?",
+                "What's the best movie you've ever seen?",
+                "Do you prefer action movies?",
+                "What's a good comedy movie?",
+                "What's the latest movie you watched?",
+                "Do you watch movies often?",
+                "Do you prefer watching movies at home or in theaters?",
+                "What movie do you suggest?",
+                "What's your all-time favorite movie?",
+                "Have you watched any new movies recently?",
+                "What's a must-watch movie?",
+                "Any good horror movies to watch?",
+                "What movie makes you laugh?",
+                "Do you like superhero movies?",
+                "Have you seen any good documentaries?"
+            ],
+            "responses": [
+                "I don't watch movies much, but I can definitely suggest some fun ones! (Naan movies kam paararen, aana nalla fun movies suggest panniduren.)",
+                "You should watch 'Inception' – it's mind-blowing! (Inception padam paarunga, mind-blowing!)",
+                "Maybe 'The Dark Knight' is your style – it's a classic! (The Dark Knight ungalukku suit aagum, classic!)",
+                "Comedy movies are always fun – have you seen 'The Hangover'? (Comedy movies super fun, 'The Hangover' paarunga!)",
+                "If you're in a thriller mood, 'Gone Girl' is a great pick! (Thriller mood la irundha 'Gone Girl' try pannunga!)",
+                "For romance, 'The Notebook' is a must-watch! (Romantic movies ku 'The Notebook' must-watch!)",
+                "If you're into sci-fi, 'Interstellar' is awesome! (Sci-fi lovers, 'Interstellar' awesome!)",
+                "Action-packed 'Mad Max' is full of surprises! (Action la 'Mad Max' full of surprises!)"
+            ]
+        },
+        {
+            "tag": "going_out_conversations",
+            "patterns": [
+                "Are you going out today?",
+                "What are you doing today?",
+                "Did you go outside today?",
+                "What are you up to?",
+                "Are you staying home?",
+                "Going anywhere today?",
+                "Are you going out?",
+                "Did you step outside today?",
+                "Is it nice outside?",
+                "Are you going for a walk?",
+                "Where are you going?",
+                "Are you going out with friends?",
+                "What's the weather like outside?",
+                "Do you prefer staying inside or going out?",
+                "Is it sunny outside?",
+                "Are you going shopping?",
+                "Have you been outside today?",
+                "Is it a good day to go outside?"
+            ],
+            "responses": [
+                "I usually don't go out much, but hope you have a fun day out! (Naan veliye kam poadren, aana ungal day out super irukkattum!)",
+                "A walk outside is always refreshing! (Veliye oru walk always refreshing!)",
+                "The weather seems nice – perfect for heading out! (Mausam nalla irukku, outing ku perfect!)",
+                "Wish I could join you outside! (Kaash naanum veliye join pannala!)",
+                "It looks sunny – a perfect day for a stroll! (Bahar dhoop, stroll ku perfect day!)",
+                "If you're going for a walk, enjoy the fresh air! (Walk la ponga, fresh air enjoy pannunga!)",
+                "Hope you're having a blast outside! (Veliye romba fun irukattum!)"
+            ]
+        },
+        {
+            "tag": "general_conversations",
+            "patterns": [
+                "What are you doing right now?",
+                "What's keeping you busy?",
+                "What's your task for today?",
+                "Are you working on something?",
+                "What are you up to?",
+                "Are you doing anything exciting?",
+                "What's your plan for today?",
+                "What are you focusing on today?",
+                "How are you spending your day?",
+                "Are you enjoying your day?",
+                "What's the most important thing you're doing right now?",
+                "What do you have planned for today?",
+                "Are you preparing for something special?",
+                "Are you free right now?",
+                "What are you working on?"
+            ],
+            "responses": [
+                "I'm always here, just a message away! (Naan hamesha irukken, just message pannunga!)",
+                "I'm here to help like a friend – what do you need today? (Naan friend maadhiri udhavi seyyaren – enna venum?)",
+                "Right now, we're just chatting and hanging out! (Ippothu, namma just chat pannra!)",
+                "I'm focused on helping you – what can I do for you today? (Naan ungalukku udhavi seyyara, enna venum?)",
+                "Got questions? I'm here to answer them! (Sawaal irukku? Naan irukken answer panna!)",
+                "Always ready to help, nanba! (Always ready, nanba!)"
+            ]
+        },
+        {
+            "tag": "sports_conversations",
+            "patterns": [
+                "What's your favorite sport?",
+                "Do you watch football?",
+                "Are you into cricket?",
+                "Do you like playing basketball?",
+                "What's the best sport to play?",
+                "Who's your favorite athlete?",
+                "Do you watch tennis?",
+                "What's your take on soccer?",
+                "Which sport do you recommend?"
+            ],
+            "responses": [
+                "I don't play much, but cricket is super exciting! (Naan sports kam vilaiyaada, aana cricket romba exciting!)",
+                "Football is always popular, right? (Football ellorukum popular!)",
+                "Basketball is fun if you love fast-paced games! (Basketball fast games la fun!)",
+                "Tennis is a great sport to watch! (Tennis paarunga, super!)",
+                "If you're into teamwork, soccer might be your game! (Teamwork venumna, soccer try pannunga!)"
+            ]
+        },
+        {
+            "tag": "technology_discussions",
+            "patterns": [
+                "What's the latest in technology?",
+                "Do you use any gadgets?",
+                "What's your favorite app?",
+                "What's trending in tech?",
+                "Can you recommend a good gadget?",
+                "What's the best smartphone right now?",
+                "Do you follow AI developments?",
+                "What's new in software?",
+                "Do you prefer iOS or Android?"
+            ],
+            "responses": [
+                "AI is advancing fast these days! (AI romba fast advance aagudhu!)",
+                "I don't use many gadgets, but smartphones are really cool! (Naan gadgets kam use panna, aana smartphones super!)",
+                "For apps, productivity tools like Trello are really useful! (Apps la Trello mathiri tools useful!)",
+                "If you're into tech, check out smart home devices – they're awesome! (Tech venumna, smart home devices paarunga!)",
+                "Both Android and iOS have their own cool features! (Androidum iOSum, rendu unique features irukku!)"
+            ]
+        },
+        {
+            "tag": "motivational_quotes",
+            "patterns": [
+                "Can you motivate me?",
+                "Do you have any inspirational quotes?",
+                "Tell me something positive.",
+                "Can you share a motivational thought?",
+                "I need some inspiration."
+            ],
+            "responses": [
+                "Believe in yourself, nanba! (Believe in yourself, friend!)",
+                "Success comes from hard work and determination! (Safalta hard work and determination la varudhu!)",
+                "Every day is a new chance to grow! (Oru naal, pudhiya chance to grow!)",
+                "Keep pushing forward – you're doing great! (Munneri, neenga super!)",
+                "Don't stop until you're proud of yourself! (Ungalai maththiya paarunga!)"
+            ]
+        }
+    ]
+}
